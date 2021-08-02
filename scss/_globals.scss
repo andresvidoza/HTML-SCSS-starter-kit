@@ -1,0 +1,30 @@
+html{
+    font-size: 100%; // let use control zoom level in browser
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; // https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+}
+
+// TOP = The html element has box-sizing: border-box and that all elements (*, *::before, *::after) are then going to inherit the box-sizing of their parent.
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.3;
+}
+
+// Responsiveness
+.hide-for-mobile{
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide-for-desktop{
+    @include breakpoint-down(large){
+        display: none;
+    }
+}
