@@ -14,6 +14,37 @@ body{
     padding: 0;
     font-family: 'Helvetica', 'Arial', sans-serif;
     line-height: 1.3;
+    color: white;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 1.375rem;
+}
+
+// Resets
+input, button{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+// Flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
 }
 
 // Responsiveness
@@ -24,7 +55,8 @@ body{
 }
 
 .hide-for-desktop{
-    @include breakpoint-down(large){
+    @include breakpoint-up(large){
         display: none;
     }
 }
+

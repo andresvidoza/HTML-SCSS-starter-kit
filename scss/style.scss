@@ -1,3 +1,7 @@
+@import "fonts";
+@import "mixins";
 @import "variables";
 @import "globals";
-@import "mixins"
+
+// Sections
+@import "./sections/_password";
