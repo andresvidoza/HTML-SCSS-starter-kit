@@ -6,11 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="password__background">
         <div class="password__background__blur"></div>
+    </div>
+
+    <div class="password__login close">
+        <div class="password__login__close"><i data-feather="x"></i></div>
+        <h4 class="password__login__header">Log in</h4>
+        <div class="password__login__separator"></div>
+        <h3 class="password__login__title">Authentication</h3>
+        <p class="password__login__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+        <div class="password__login__input flex">
+            <input type="password" name="" id="" placeholder="password">
+            <input type="submit" value="login">
+        </div>
     </div>
 
     <header class="password__header flex flex-jc-sb">
@@ -35,8 +51,8 @@
     </div>
 
     <footer class="password__footer flex flex-jc-c flex-ai-c">
-        <ul class="flex">
-            <li>Autmotive</li>
+        <ul class="flex flex-jc-c">
+            <li>Automotive</li>
             <li>Motivational</li>
             <li>Tech</li>
             <li>Sports</li>
@@ -44,7 +60,14 @@
         </ul>
     </footer>
 
-    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- My Own JS -->
     <script src="./js/script.js"></script>
+
+    <!-- Feather Icons Init -->
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>
